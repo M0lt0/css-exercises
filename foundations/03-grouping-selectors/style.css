@@ -1,0 +1,13 @@
+.first.second {
+  font-family: Helvetica, "Times New Roman", sans-serif;
+}
+.first {
+  background: black;
+  color: white;
+  font-size: 28px;
+}
+
+.second {
+  background: yellow;
+  font-size: 28px;
+}
