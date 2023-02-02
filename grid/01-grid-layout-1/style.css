@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -8,6 +9,10 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-row: 6;
+  grid-column: 6;
+  gap: 20px;
 }
 
 .container div {
@@ -20,19 +25,35 @@ body, html {
 }
 
 .header {
-  background-color: #FFDE22;
+  background-color: #ffde22;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .sidebar {
-  background-color: #FF7755;
+  background-color: #ff7755;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 5;
 }
 
 .nav {
-  background-color: #00DDFF;
+  background-color: #00ddff;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .article {
   background-color: #bccbde;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
 .article p {
@@ -44,4 +65,8 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
